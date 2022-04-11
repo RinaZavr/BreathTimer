@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nafnaf"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.katrin.first.mainScreen.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_repeatFragment"
+            app:destination="@id/repeatFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/repeatFragment"
+        android:name="com.katrin.first.repeatScreen.view.RepeatFragment"
+        android:label="RepeatFragment" >
+        <action
+            android:id="@+id/action_repeatFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.katrin.first.infoFragment.InfoFragment"
+        android:label="InfoFragment" >
+        <action
+            android:id="@+id/action_infoFragment_to_shemsFragment"
+            app:destination="@id/shemsFragment" />
+        <action
+            android:id="@+id/action_infoFragment_to_recomendFragment"
+            app:destination="@id/recomendFragment" />
+        <action
+            android:id="@+id/action_infoFragment_to_authorFragment"
+            app:destination="@id/authorFragment" />
+        <action
+            android:id="@+id/action_infoFragment_to_timerFragment"
+            app:destination="@id/timerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shemsFragment"
+        android:name="com.katrin.first.shemsFragment.ShemsFragment"
+        android:label="ShemsFragment" >
+        <action
+            android:id="@+id/action_shemsFragment_to_relaxFragment"
+            app:destination="@id/relaxFragment" />
+        <action
+            android:id="@+id/action_shemsFragment_to_balanceFragment"
+            app:destination="@id/balanceFragment" />
+        <action
+            android:id="@+id/action_shemsFragment_to_cheerFragment"
+            app:destination="@id/cheerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/relaxFragment"
+        android:name="com.katrin.first.relaxFragment.RelaxFragment"
+        android:label="RelaxFragment" />
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.katrin.first.balanceFragment.BalanceFragment"
+        android:label="BalanceFragment" />
+    <fragment
+        android:id="@+id/cheerFragment"
+        android:name="com.katrin.first.cheerFragment.CheerFragment"
+        android:label="CheerFragment" />
+    <fragment
+        android:id="@+id/recomendFragment"
+        android:name="com.katrin.first.recomendFragment.RecomendFragment"
+        android:label="RecomendFragment" />
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.katrin.first.timerFragment.TimerFragment"
+        android:label="TimerFragment" >
+        <action
+            android:id="@+id/action_timerFragment_to_shemsFragment"
+            app:destination="@id/shemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorFragment"
+        android:name="com.katrin.first.authorFragment.AuthorFragment"
+        android:label="AuthorFragment" />
+</navigation>

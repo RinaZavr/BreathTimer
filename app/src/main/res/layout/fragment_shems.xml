@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg">
+
+    <ImageView
+        android:id="@+id/shems_image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dop_top_right"
+        android:layout_marginTop="@dimen/dop_top_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button_bg" />
+
+    <Button
+        android:id="@+id/shems_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/shems_image_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/shems_button_relax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/info_left_right"
+        android:layout_marginTop="@dimen/info_button_shems_top"
+        android:layout_marginEnd="@dimen/info_left_right"
+        android:background="@drawable/for_button_relax"
+        android:paddingVertical="54dp"
+        android:text="@string/shems_button_relax_title"
+        android:textAllCaps="false"
+        android:textColor="@color/shems_text_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/shems_button_balance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/info_left_right"
+        android:layout_marginTop="@dimen/info_button_between_top"
+        android:layout_marginEnd="@dimen/info_left_right"
+        android:background="@drawable/for_button_balance"
+        android:paddingVertical="54dp"
+        android:text="@string/shems_button_balance_title"
+        android:textAllCaps="false"
+        android:textColor="@color/shems_text_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shems_button_relax" />
+
+    <android.widget.Button
+        android:id="@+id/shems_button_cheer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/info_left_right"
+        android:layout_marginTop="@dimen/info_button_between_top"
+        android:layout_marginEnd="@dimen/info_left_right"
+        android:background="@drawable/for_button_cheer"
+        android:paddingVertical="54dp"
+        android:text="@string/shems_button_cheer_title"
+        android:textAllCaps="false"
+        android:textColor="@color/shems_text_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shems_button_balance" />
+</androidx.constraintlayout.widget.ConstraintLayout>

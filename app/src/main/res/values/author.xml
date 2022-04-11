@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="author_title_title">Об Авторе</string>
+    <string name="author_text_text">Привет! Меня зовут Катя.</string>
+</resources>
