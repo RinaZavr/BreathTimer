@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shems_button_relax_title">Расслабление</string>
+    <string name="shems_button_balance_title">Баланс</string>
+    <string name="shems_button_cheer_title">Бодрость</string>
+    <color name="shems_text_color">#5A4482</color>
+</resources>

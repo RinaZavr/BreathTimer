@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg">
+
+    <ImageView
+        android:id="@+id/home_floure_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/floure_bg" />
+
+    <ImageView
+        android:id="@+id/home_image_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dop_top_right"
+        android:layout_marginEnd="@dimen/dop_top_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_button_bg" />
+
+    <Button
+        android:id="@+id/home_button_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/home_image_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.widget.Button
+        android:id="@+id/home_button_breath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_button_top"
+        android:background="@drawable/home_button_breath_bg"
+        android:fontFamily="@font/mazzard_regular"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="14dp"
+        android:text="@string/home_button_breath_title"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintDimensionRatio="H, 1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_icon_breath2" />
+
+    <ImageView
+        android:id="@+id/home_icon_breath1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/home_icon_top"
+        android:scaleType="fitCenter"
+        app:layout_constraintDimensionRatio="H, 1:1"
+        app:layout_constraintEnd_toStartOf="@+id/home_icon_delay1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_icon_timer"
+        app:srcCompat="@drawable/ellipse_dark" />
+
+    <ImageView
+        android:id="@+id/home_icon_delay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_icon_top"
+        app:layout_constraintDimensionRatio="H, 1:1"
+        app:layout_constraintEnd_toStartOf="@+id/home_icon_breath2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/home_icon_breath1"
+        app:layout_constraintTop_toBottomOf="@+id/home_icon_timer"
+        app:srcCompat="@drawable/ellipse_light" />
+
+    <ImageView
+        android:id="@+id/home_icon_breath2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_icon_top"
+        app:layout_constraintDimensionRatio="H, 1:1"
+        app:layout_constraintEnd_toStartOf="@+id/home_icon_delay2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/home_icon_delay1"
+        app:layout_constraintTop_toBottomOf="@+id/home_icon_timer"
+        app:srcCompat="@drawable/ellipse_dark" />
+
+    <ImageView
+        android:id="@+id/home_icon_delay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_icon_top"
+        app:layout_constraintDimensionRatio="H, 1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/home_icon_breath2"
+        app:layout_constraintTop_toBottomOf="@+id/home_icon_timer"
+        app:srcCompat="@drawable/ellipse_light" />
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_title_top"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/home_title_title"
+        android:textColor="@color/info_text_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_icon_timer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/timer_top"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_timer_empty" />
+
+    <TextView
+        android:id="@+id/home_text_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/info_text_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_icon_timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/home_icon_timer" />
+
+    <TextView
+        android:id="@+id/home_text_delay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/home_text_bottom"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/home_text_delay_text"
+        android:textColor="@color/info_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/home_icon_delay2"
+        app:layout_constraintEnd_toEndOf="@+id/home_icon_delay2"
+        app:layout_constraintStart_toStartOf="@+id/home_icon_delay2" />
+
+    <TextView
+        android:id="@+id/home_text_breath1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/home_text_bottom"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/home_text_breath1_text"
+        android:textColor="@color/info_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/home_icon_breath1"
+        app:layout_constraintEnd_toEndOf="@+id/home_icon_breath1"
+        app:layout_constraintStart_toStartOf="@+id/home_icon_breath1" />
+
+    <TextView
+        android:id="@+id/home_text_delay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/home_text_bottom"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/home_text_delay_text"
+        android:textColor="@color/info_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/home_icon_delay1"
+        app:layout_constraintEnd_toEndOf="@+id/home_icon_delay1"
+        app:layout_constraintStart_toStartOf="@+id/home_icon_delay1" />
+
+    <TextView
+        android:id="@+id/home_text_breath2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/home_text_bottom"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/home_text_breath2_text"
+        android:textColor="@color/info_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/home_icon_breath2"
+        app:layout_constraintEnd_toEndOf="@+id/home_icon_breath2"
+        app:layout_constraintStart_toStartOf="@+id/home_icon_breath2" />
+
+    <TextView
+        android:id="@+id/home_timer_breath1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/info_text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/home_icon_breath1"
+        app:layout_constraintEnd_toEndOf="@+id/home_icon_breath1"
+        app:layout_constraintStart_toStartOf="@+id/home_icon_breath1"
+        app:layout_constraintTop_toTopOf="@+id/home_icon_breath1"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/home_timer_delay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/info_text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/home_icon_delay1"
+        app:layout_constraintEnd_toEndOf="@+id/home_icon_delay1"
+        app:layout_constraintStart_toStartOf="@+id/home_icon_delay1"
+        app:layout_constraintTop_toTopOf="@+id/home_icon_delay1" />
+
+    <TextView
+        android:id="@+id/home_timer_breath2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/info_text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/home_icon_breath2"
+        app:layout_constraintEnd_toEndOf="@+id/home_icon_breath2"
+        app:layout_constraintStart_toStartOf="@+id/home_icon_breath2"
+        app:layout_constraintTop_toTopOf="@+id/home_icon_breath2" />
+
+    <TextView
+        android:id="@+id/home_timer_delay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/info_text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/home_icon_delay2"
+        app:layout_constraintEnd_toEndOf="@+id/home_icon_delay2"
+        app:layout_constraintStart_toStartOf="@+id/home_icon_delay2"
+        app:layout_constraintTop_toTopOf="@+id/home_icon_delay2" />
+
+    <Button
+        android:id="@+id/home_button_timer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/home_icon_timer"
+        app:layout_constraintEnd_toEndOf="@+id/home_icon_timer"
+        app:layout_constraintStart_toStartOf="@+id/home_icon_timer"
+        app:layout_constraintTop_toTopOf="@+id/home_icon_timer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
