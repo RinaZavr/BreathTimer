@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg">
+
+    <ImageView
+        android:id="@+id/info_image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dop_top_right"
+        android:layout_marginTop="@dimen/dop_top_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button_bg" />
+
+    <Button
+        android:id="@+id/info_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/info_image_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/info_image_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/info_bg" />
+
+    <android.widget.Button
+        android:id="@+id/info_button_shema"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/info_left_right"
+        android:layout_marginTop="@dimen/info_button_shems_top"
+        android:layout_marginEnd="@dimen/info_left_right"
+        android:background="@drawable/repeat_button_repeat_bg"
+        android:backgroundTint="@color/repeat_button_repeat_bg"
+        android:fontFamily="@font/mazzard_regular"
+        android:paddingVertical="54dp"
+        android:text="@string/info_button_shema_title"
+        android:textAllCaps="false"
+        android:textColor="@color/info_text_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/info_button_about_timer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/info_left_right"
+        android:layout_marginTop="@dimen/info_button_between_top"
+        android:layout_marginEnd="@dimen/info_left_right"
+        android:background="@drawable/info_buttons_bg"
+        android:fontFamily="@font/mazzard_regular"
+        android:paddingVertical="14dp"
+        android:text="@string/info_button_about_timer_title"
+        android:textAllCaps="false"
+        android:textColor="@color/info_text_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_button_shema" />
+
+    <android.widget.Button
+        android:id="@+id/info_button_recomend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/info_left_right"
+        android:layout_marginTop="@dimen/info_button_between_top"
+        android:layout_marginEnd="@dimen/info_left_right"
+        android:background="@drawable/info_buttons_bg"
+        android:fontFamily="@font/mazzard_regular"
+        android:paddingVertical="14dp"
+        android:text="@string/info_button_recomend"
+        android:textAllCaps="false"
+        android:textColor="@color/info_text_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_button_about_timer" />
+
+    <android.widget.Button
+        android:id="@+id/info_button_about_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/info_left_right"
+        android:layout_marginTop="@dimen/info_button_between_top"
+        android:layout_marginEnd="@dimen/info_left_right"
+        android:background="@drawable/info_buttons_bg"
+        android:fontFamily="@font/mazzard_regular"
+        android:paddingVertical="14dp"
+        android:text="@string/info_button_about_author"
+        android:textAllCaps="false"
+        android:textColor="@color/info_text_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_button_recomend" />
+</androidx.constraintlayout.widget.ConstraintLayout>

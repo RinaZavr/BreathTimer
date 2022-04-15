@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg">
+
+    <ImageView
+        android:id="@+id/balance_image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dop_top_right"
+        android:layout_marginTop="@dimen/dop_top_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button_bg" />
+
+    <Button
+        android:id="@+id/balance_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/balance_image_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/balance_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/balance_icon_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/balance_icon" />
+
+    <ImageView
+        android:id="@+id/balance_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/shems_rectangle_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/text_block_bg" />
+
+    <TextView
+        android:id="@+id/balance_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/shems_title_top"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/balance_title_text"
+        android:textColor="@color/info_text_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/balance_block"
+        app:layout_constraintStart_toStartOf="@+id/balance_block"
+        app:layout_constraintTop_toBottomOf="@+id/balance_icon" />
+
+    <android.widget.Button
+        android:id="@+id/balance_button_breath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/shems_button_top"
+        android:background="@drawable/home_button_breath_bg"
+        android:drawableTint="@color/home_button_breath_bg"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="14dp"
+        android:text="@string/home_button_breath_title"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balance_block" />
+</androidx.constraintlayout.widget.ConstraintLayout>

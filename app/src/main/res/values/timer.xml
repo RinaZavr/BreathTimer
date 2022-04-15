@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timer_button_shema_title">Схемы</string>
+    <string name="timer_title_title">О таймере</string>
+    <string name="timer_text_lungs_text">Таймер предназначен для дыхательных тренировок.</string>
+    <string name="timer_text_stopwatch_text">Вы можете выставить необходимые интервалы и задать общее время тренировки.</string>
+    <string name="timer_text_metro_text">Дополнительно можно добавить звук метронома.</string>
+    <string name="timer_text_brightness_text">Можете выбрать схему дыхания для Бодрости, Расслабления или Баланса.</string>
+</resources>

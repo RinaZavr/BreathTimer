@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dop_bg">
+
+    <ImageView
+        android:id="@+id/timer_image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dop_top_right"
+        android:layout_marginTop="@dimen/dop_top_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button_bg" />
+
+    <Button
+        android:id="@+id/timer_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/timer_image_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/timer_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dop_icon_bg" />
+
+    <android.widget.Button
+        android:id="@+id/timer_button_shema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/timer_button_bottom"
+        android:background="@drawable/timer_button_shema_bg"
+        android:fontFamily="@font/mazzard_regular"
+        android:paddingHorizontal="70dp"
+        android:paddingVertical="14dp"
+        android:text="@string/timer_button_shema_title"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/timer_button_breath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/info_button_between_top"
+        android:background="@drawable/home_button_breath_bg"
+        android:drawableTint="@color/home_button_breath_bg"
+        android:fontFamily="@font/mazzard_regular"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="14dp"
+        android:text="@string/home_button_breath_title"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/timer_button_shema"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/timer_title_top"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/timer_title_title"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_text_lungs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dop_text_left_right"
+        android:layout_marginEnd="@dimen/dop_text_left_right"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/timer_text_lungs_text"
+        android:textAlignment="center"
+        android:textColor="@color/info_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/timer_icon_stopwatch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_icon_lungs" />
+
+    <TextView
+        android:id="@+id/timer_text_stopwatch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dop_text_left_right"
+        android:layout_marginEnd="@dimen/dop_text_left_right"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/timer_text_stopwatch_text"
+        android:textAlignment="center"
+        android:textColor="@color/info_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/timer_icon_metro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_icon_stopwatch" />
+
+    <TextView
+        android:id="@+id/timer_text_stopwatch2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dop_text_left_right"
+        android:layout_marginEnd="@dimen/dop_text_left_right"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/timer_text_metro_text"
+        android:textAlignment="center"
+        android:textColor="@color/info_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/timer_icon_brightness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_icon_metro" />
+
+    <TextView
+        android:id="@+id/timer_text_stopwatch3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dop_text_left_right"
+        android:layout_marginEnd="@dimen/dop_text_left_right"
+        android:layout_marginBottom="@dimen/timer_text_bottom"
+        android:fontFamily="@font/mazzard_regular"
+        android:text="@string/timer_text_brightness_text"
+        android:textAlignment="center"
+        android:textColor="@color/info_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/timer_button_breath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_icon_brightness" />
+
+    <ImageView
+        android:id="@+id/timer_icon_lungs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/timer_icon_top"
+        app:layout_constraintBottom_toTopOf="@+id/timer_text_lungs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_title"
+        app:srcCompat="@drawable/icon_lungs" />
+
+    <ImageView
+        android:id="@+id/timer_icon_stopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/timer_text_stopwatch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_text_lungs"
+        app:srcCompat="@drawable/icon_stopwatch" />
+
+    <ImageView
+        android:id="@+id/timer_icon_metro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/timer_text_stopwatch2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_text_stopwatch"
+        app:srcCompat="@drawable/icon_metro" />
+
+    <ImageView
+        android:id="@+id/timer_icon_brightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/timer_text_stopwatch3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_text_stopwatch2"
+        app:srcCompat="@drawable/icon_brightness" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
