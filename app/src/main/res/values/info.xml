@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="info_button_shema_title">Схемы дыхания</string>
-    <string name="info_button_about_timer_title">О таймере</string>
-    <string name="info_button_recomend">Рекомендации</string>
-    <string name="info_button_about_author">Об авторе</string>
-    <color name="info_text_color">#5A4482</color>
-</resources>

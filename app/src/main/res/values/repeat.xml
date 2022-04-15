@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="repeat_button_repeat_title">Повторить</string>
-    <string name="repeat_text_timer_text">32:10</string>
-    <string name="repeat_text_breath1_text">вдох</string>
-    <string name="repeat_text_breath2_text">выдох</string>
-    <string name="repeat_text_delay_text">задержка</string>
-</resources>

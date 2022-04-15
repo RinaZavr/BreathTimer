@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="home_button_breath_title">Дышать</string>
-    <string name="home_title_title">Время тренировки</string>
-    <string name="home_text_timer_text">32:10</string>
-    <string name="home_text_breath1_text">вдох</string>
-    <string name="home_text_breath2_text">выдох</string>
-    <string name="home_text_delay_text">задержка</string>
-</resources>
