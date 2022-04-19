@@ -135,10 +135,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubik_medium"
-<<<<<<< HEAD
-=======
-        android:text="@string/home_text_timer_text"
->>>>>>> b0b96a56309c8ba417d0ea9aa078e671952bdd0f
         android:textColor="@color/info_text_color"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/home_icon_timer"
@@ -239,7 +235,6 @@
         app:layout_constraintStart_toStartOf="@+id/home_icon_delay2"
         app:layout_constraintTop_toTopOf="@+id/home_icon_delay2" />
 
-<<<<<<< HEAD
     <Button
         android:id="@+id/home_button_timer"
         android:layout_width="0dp"
@@ -250,6 +245,4 @@
         app:layout_constraintStart_toStartOf="@+id/home_icon_timer"
         app:layout_constraintTop_toTopOf="@+id/home_icon_timer" />
 
-=======
->>>>>>> b0b96a56309c8ba417d0ea9aa078e671952bdd0f
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,11 +17,7 @@ import com.katrin.first.R
 import com.katrin.first.model.BreathSession
 
 class StartFragment : Fragment() {
-<<<<<<< HEAD
     private var timer : String = ""
-=======
-    private var timer : Int = 0
->>>>>>> b0b96a56309c8ba417d0ea9aa078e671952bdd0f
     private var breathOne : Int = 0
     private var delayOne : Int = 0
     private var breathTwo : Int = 0
@@ -64,7 +60,6 @@ class StartFragment : Fragment() {
             val dialogWindow = builder.create()
             dialogWindow.show()
         }
-<<<<<<< HEAD
 
         view.findViewById<ImageView>(R.id.home_icon_delay1).setOnClickListener {
             var dialogView = layoutInflater.inflate(R.layout.dialog_number_picker, null)
@@ -144,7 +139,5 @@ class StartFragment : Fragment() {
             val dialogWindow = builder.create()
             dialogWindow.show()
         }
-=======
->>>>>>> b0b96a56309c8ba417d0ea9aa078e671952bdd0f
     }
 }
