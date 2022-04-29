@@ -9,4 +9,5 @@ interface IRepeatViewModel {
     fun startSession(parameters: BreathSession)
     fun onDestroy()
     fun restartSession()
+    fun soundOnOff()
 }

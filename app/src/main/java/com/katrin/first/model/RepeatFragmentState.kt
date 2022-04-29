@@ -6,5 +6,6 @@ data class RepeatFragmentState(
     val firstDelay: Int = 0,
     val secondBreath: Int = 0,
     val secondDelay: Int = 0,
-    val buttonEnable: Boolean = false
+    val buttonEnable: Boolean = false,
+    val metronomValue: Boolean = false
 )

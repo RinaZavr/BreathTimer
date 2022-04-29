@@ -74,6 +74,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="@dimen/dop_top_right"
         android:layout_marginEnd="@dimen/dop_top_right"
+        app:layout_constraintBottom_toBottomOf="@+id/repeat_button_info"
         app:layout_constraintDimensionRatio="H, 1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -81,12 +82,21 @@
 
     <android.widget.Button
         android:id="@+id/repeat_button_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="71dp"
+        android:layout_height="47dp"
         android:background="@android:color/transparent"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/repeat_image_info"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/repeat_floure_bg" />
+
+    <android.widget.Button
+        android:id="@+id/repeat_button_metronom"
+        android:layout_width="71dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/repeat_button_info"
         app:layout_constraintTop_toTopOf="@+id/repeat_floure_bg" />
 
     <TextView
@@ -241,5 +251,16 @@
         app:layout_constraintEnd_toEndOf="@+id/repeat_icon_delay2"
         app:layout_constraintStart_toStartOf="@+id/repeat_icon_delay2"
         app:layout_constraintTop_toTopOf="@+id/repeat_icon_delay2" />
+
+    <ImageView
+        android:id="@+id/repeat_image_metronom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dop_top_right"
+        android:layout_marginEnd="@dimen/balance_icon_top"
+        app:layout_constraintBottom_toBottomOf="@+id/repeat_button_metronom"
+        app:layout_constraintEnd_toStartOf="@+id/repeat_image_info"
+        app:layout_constraintTop_toTopOf="@+id/repeat_floure_bg"
+        app:srcCompat="@drawable/icon_metro_dark" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

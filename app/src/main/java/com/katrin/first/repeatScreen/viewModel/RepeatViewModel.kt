@@ -3,10 +3,15 @@ package com.katrin.first.repeatScreen.viewModel
 import android.os.CountDownTimer
 import com.katrin.first.model.BreathSession
 import com.katrin.first.model.RepeatFragmentState
+import com.katrin.first.repeatScreen.sound.ISoundManager
+import com.katrin.first.reps.ISessionRepository
 import io.reactivex.subjects.PublishSubject
 import javax.inject.Inject
 
-class RepeatViewModel @Inject constructor(): IRepeatViewModel {
+class RepeatViewModel @Inject constructor(
+    private val soundManager: ISoundManager,
+    private val rep: ISessionRepository
+): IRepeatViewModel {
     private var sessionParameter = BreathSession()
     private var currentState = RepeatFragmentState()
     private var timer: CountDownTimer? = null
@@ -55,6 +60,8 @@ class RepeatViewModel @Inject constructor(): IRepeatViewModel {
                 }
 
                 state.onNext(currentState)
+
+                if(currentState.metronomValue) soundManager.playSound()
             }
 
             override fun onFinish() {}
@@ -73,4 +80,11 @@ class RepeatViewModel @Inject constructor(): IRepeatViewModel {
         state.onNext(currentState) //отправить сообщение фрагменту (пожирателю подписки)
     }
 
+    override fun soundOnOff() {
+        when (currentState.metronomValue) {
+            true -> currentState = currentState.copy(metronomValue = false)
+            false -> currentState = currentState.copy(metronomValue = true)
+        }
+        state.onNext(currentState)
+    }
 }
