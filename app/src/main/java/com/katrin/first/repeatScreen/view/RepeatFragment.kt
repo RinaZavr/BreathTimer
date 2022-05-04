@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.progressindicator.CircularProgressIndicator
 import com.katrin.first.R
 import com.katrin.first.model.BreathSession
 import com.katrin.first.model.RepeatFragmentState
@@ -25,6 +26,7 @@ class RepeatFragment : Fragment() {
     @Inject
     lateinit var viewModel: IRepeatViewModel
     private val subs = CompositeDisposable()
+    private var progressbar: CircularProgressIndicator? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,6 +39,9 @@ class RepeatFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val params = arguments?.getSerializable("params") as BreathSession
+        progressbar = view.findViewById(R.id.repeat_progressbar)
+        progressbar?.max = params.time
+        progressbar?.progress = 0
 
         view.findViewById<Button>(R.id.repeat_button_back).setOnClickListener {
             findNavController().popBackStack()
@@ -82,5 +87,7 @@ class RepeatFragment : Fragment() {
         textSecondBreath?.text = state.secondBreath.toString()
         textFirstDelay?.text = state.firstDelay.toString()
         textSecondDelay?.text = state.secondDelay.toString()
+
+        progressbar?.progress = state.time
     }
 }

@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/timer_top"
+        android:visibility="invisible"
         app:layout_constraintDimensionRatio="H, 1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,6 +99,22 @@
         android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/repeat_button_info"
         app:layout_constraintTop_toTopOf="@+id/repeat_floure_bg" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/repeat_progressbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:indeterminate="false"
+        app:indicatorColor="@color/repeat_progressbar_inactive"
+        app:indicatorDirectionCircular="counterclockwise"
+        app:indicatorSize="152dp"
+        app:layout_constraintBottom_toBottomOf="@+id/repeat_icon_timer"
+        app:layout_constraintEnd_toEndOf="@+id/repeat_icon_timer"
+        app:layout_constraintStart_toStartOf="@+id/repeat_icon_timer"
+        app:layout_constraintTop_toTopOf="@+id/repeat_icon_timer"
+        app:trackColor="@color/home_button_breath_bg"
+        app:trackCornerRadius="40dp"
+        app:trackThickness="9dp" />
 
     <TextView
         android:id="@+id/repeat_text_timer"

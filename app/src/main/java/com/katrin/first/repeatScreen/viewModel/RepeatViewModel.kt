@@ -18,6 +18,10 @@ class RepeatViewModel @Inject constructor(
     override var state = PublishSubject.create<RepeatFragmentState>()
     private var copyParams = BreathSession()
 
+    init {
+        currentState = currentState.copy(metronomValue = rep.getMetronom())
+    }
+
     override fun startSession(parameters: BreathSession) {
         sessionParameter = parameters
         copyParams = parameters.copy()
@@ -86,5 +90,6 @@ class RepeatViewModel @Inject constructor(
             false -> currentState = currentState.copy(metronomValue = true)
         }
         state.onNext(currentState)
+        rep.saveMetronom(currentState.metronomValue)
     }
 }

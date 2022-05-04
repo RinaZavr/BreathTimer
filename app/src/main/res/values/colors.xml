@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="home_button_breath_bg">#B7A1D7</color>
     <color name="repeat_button_repeat_bg">#C9CBFA</color>
+    <color name="repeat_progressbar_inactive">#F7DADA</color>
 </resources>
